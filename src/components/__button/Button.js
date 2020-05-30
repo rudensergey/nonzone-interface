@@ -18,9 +18,8 @@ export class Button extends React.Component {
     constructor(props) {
         super(props);
         this.styles = {
-            orange: "button--orange",
-            blue: "button--blue",
-            greyToggle: "button--grey",
+            default: "button--default",
+            
         };
     }
 
@@ -34,7 +33,7 @@ export class Button extends React.Component {
             <button
                 className={
                     this.styles[
-                        this.props.style ? this.props.style : "orange"
+                        this.props.style ? this.props.style : "default"
                     ] +
                     " " +
                     this.props.class
